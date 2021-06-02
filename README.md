@@ -29,6 +29,7 @@ bin/console d:mi:mi
 ```
 
 Les données sont crées via des fixtures avec Nelmio/Alice fixtures et FakerPhp
+
 ```bash
 bin/console d:f:l
 ```
