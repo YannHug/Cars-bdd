@@ -1,6 +1,6 @@
 # Cars Bdd
 
-Projet Symfony de restitution des cours sur le CRUD (BREAD)
+Projet Symfony de restitution (cours sur le CRUD (BREAD))
 
 Pratique de création d'entités avec relation -> cars et brands
 
