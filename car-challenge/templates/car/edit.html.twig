@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<h1>Editer une voiture</h1>
+
+{{ form_start(form) }}
+    {{ form_errors(form) }}
+    {{ form_row(form.brand, {label: 'Marque :'}) }}
+    {{ form_row(form.model, {label: 'Modele :'}) }}
+    {{ form_row(form.createdAt, {label: 'Date de fabrication :'}) }}
+    <button class="btn btn-primary">Ajouter</button>
+{{ form_end(form) }}
+    <a href="{{ path('car_browse') }}">Retour à la liste</a>
+{% endblock %}

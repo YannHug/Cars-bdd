@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+
+		{% block stylesheets %}
+			<link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+		{% endblock %}
+
+		{% block javascripts %}{% endblock %}
+	</head>
+	<body>
+		{% block navbar %}
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="{{ path('car_browse')}}">My Voiture</a>
+					<div class="collapse navbar-collapse" id="navbarColor02">
+						<ul class="navbar-nav me-auto">
+
+							<li class="nav-item">
+								<a class="nav-link" href="{{ path('car_browse')}}">Les voitures</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{{ path('brand_browse')}}">Les marques</a>
+							</li>
+
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		{% endblock %}
+		<div class="container"> {% block body %}{% endblock %}</div>
+		</body>
+	</html>

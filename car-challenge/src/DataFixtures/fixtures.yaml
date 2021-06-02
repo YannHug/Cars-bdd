@@ -1,0 +1,9 @@
+App\Entity\Car:
+    car_{1..300}:
+        model: '<vehicleModel()>'
+        createdAt: '<dateTimeBetween("-30 years", "now")>'
+        brand: '@brand_*'
+
+App\Entity\Brand:
+    brand_{1..60}:
+        name (unique): '<vehicleBrand()>'
